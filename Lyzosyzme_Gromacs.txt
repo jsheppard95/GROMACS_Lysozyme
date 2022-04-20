@@ -1,0 +1,17 @@
+Summary .txt file of all GROMACS commands and explantion for the simulation
+of Lysozyme in a box of water.
+
+# Activate GROMACS Environment:
+$ source /usr/local/gromacs/bin/GMXRC
+
+$ grep -v HOH 1aki.pdb > 1AKI_clean.pdb
+# Remove water molecules (HOH) in the PDB file
+# PDB file shows the protein crystal structure from X-ray crystallography
+  data
+
+$ gmx pdb2gmx -f 1AKI_clean.pdb -o 1AKI_processed.gro -water spce
+# From PDB file, generate molecule topology, position restraint file,
+  post-processed structure file
+# -water: select water model - select, none, spc, spce, tip3p, tip4p, tip5p,
+                               tips3p
+
