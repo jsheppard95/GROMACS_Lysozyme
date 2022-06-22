@@ -104,14 +104,15 @@ def make_plot(xdata, ydata, metadata, ax, xlabel_set=None, ylabel_set=None, titl
         ax.plot(xdata, running_avg)
         ax.legend([legend, "1 ps Running Average"])
     else:
-        ax.legend(legend)
+        print(legend)
+        ax.legend([legend,])
 
 
-#plot_xvg("potential.xvg",
-#    xlabel_set="Number of Steps",
-#    ylabel_set="Potential Energy (kJ/mol)",
-#    title_set="Energy Minimization, 1AKI, Steepest Descent",
-#    figsize=(8, 6))
+plot_xvg("potential.xvg",
+    xlabel_set="Number of Steps",
+    ylabel_set="Potential Energy (kJ/mol)",
+    title_set="Energy Minimization, 1AKI, Steepest Descent",
+    figsize=(8, 6))
 #
 #plot_xvg("temperature.xvg",
 #    ylabel_set="Temperature (K)",
@@ -140,4 +141,4 @@ def make_plot(xdata, ydata, metadata, ax, xlabel_set=None, ylabel_set=None, titl
 #plot_xvg("gyrate.xvg",
 #         title_set="Radius of gyration, 1AKI, Unrestrained MD")
 #
-#plt.show()
+plt.show()
