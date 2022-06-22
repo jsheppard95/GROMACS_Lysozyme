@@ -107,37 +107,37 @@ def make_plot(xdata, ydata, metadata, ax, xlabel_set=None, ylabel_set=None, titl
         ax.legend(legend)
 
 
-plot_xvg("potential.xvg",
-    xlabel_set="Number of Steps",
-    ylabel_set="Potential Energy (kJ/mol)",
-    title_set="Energy Minimization, 1AKI, Steepest Descent",
-    figsize=(8, 6))
-
-plot_xvg("temperature.xvg",
-    ylabel_set="Temperature (K)",
-    title_set="Temperature, 1AKI, NVT Equilibration",
-    figsize=(8, 6),
-    do_tot_avg=True,
-    do_running_avg=True)
-
-plot_xvg("pressure.xvg",
-    ylabel_set="Pressure (Bar)",
-    title_set="Pressure, 1AKI, NPT Equilibrium",
-    do_tot_avg=True,
-    do_running_avg=True)
-
-plot_xvg("density.xvg",
-    ylabel_set="Density (kg/m^3)",
-    title_set="Density, 1AKI, NPT Equilibrium",
-    do_tot_avg=True,
-    do_running_avg=True)
-
-plot_xvg("rmsd.xvg",
-    fname2="rmsd_xtal.xvg",
-    title_set="RMSD, 1AKI, Backbone",
-    legend=["Equilibrated", "Crystal"])
-
-plot_xvg("gyrate.xvg",
-         title_set="Radius of gyration, 1AKI, Unrestrained MD")
-
-plt.show()
+#plot_xvg("potential.xvg",
+#    xlabel_set="Number of Steps",
+#    ylabel_set="Potential Energy (kJ/mol)",
+#    title_set="Energy Minimization, 1AKI, Steepest Descent",
+#    figsize=(8, 6))
+#
+#plot_xvg("temperature.xvg",
+#    ylabel_set="Temperature (K)",
+#    title_set="Temperature, 1AKI, NVT Equilibration",
+#    figsize=(8, 6),
+#    do_tot_avg=True,
+#    do_running_avg=True)
+#
+#plot_xvg("pressure.xvg",
+#    ylabel_set="Pressure (Bar)",
+#    title_set="Pressure, 1AKI, NPT Equilibrium",
+#    do_tot_avg=True,
+#    do_running_avg=True)
+#
+#plot_xvg("density.xvg",
+#    ylabel_set="Density (kg/m^3)",
+#    title_set="Density, 1AKI, NPT Equilibrium",
+#    do_tot_avg=True,
+#    do_running_avg=True)
+#
+#plot_xvg("rmsd.xvg",
+#    fname2="rmsd_xtal.xvg",
+#    title_set="RMSD, 1AKI, Backbone",
+#    legend=["Equilibrated", "Crystal"])
+#
+#plot_xvg("gyrate.xvg",
+#         title_set="Radius of gyration, 1AKI, Unrestrained MD")
+#
+#plt.show()
