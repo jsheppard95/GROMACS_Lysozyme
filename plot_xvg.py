@@ -108,11 +108,11 @@ def make_plot(xdata, ydata, metadata, ax, xlabel_set=None, ylabel_set=None, titl
         ax.legend([legend,])
 
 
-plot_xvg("potential.xvg",
-    xlabel_set="Number of Steps",
-    ylabel_set="Potential Energy (kJ/mol)",
-    title_set="Energy Minimization, 1AKI, Steepest Descent",
-    figsize=(8, 6))
+#plot_xvg("potential.xvg",
+#    xlabel_set="Number of Steps",
+#    ylabel_set="Potential Energy (kJ/mol)",
+#    title_set="Energy Minimization, 1AKI, Steepest Descent",
+#    figsize=(8, 6))
 #
 #plot_xvg("temperature.xvg",
 #    ylabel_set="Temperature (K)",
@@ -121,11 +121,11 @@ plot_xvg("potential.xvg",
 #    do_tot_avg=True,
 #    do_running_avg=True)
 #
-#plot_xvg("pressure.xvg",
-#    ylabel_set="Pressure (Bar)",
-#    title_set="Pressure, 1AKI, NPT Equilibrium",
-#    do_tot_avg=True,
-#    do_running_avg=True)
+plot_xvg("pressure.xvg",
+    ylabel_set="Pressure (Bar)",
+    title_set="Pressure, 1AKI, NPT Equilibrium",
+    do_tot_avg=True,
+    do_running_avg=True)
 #
 #plot_xvg("density.xvg",
 #    ylabel_set="Density (kg/m^3)",
