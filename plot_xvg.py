@@ -105,7 +105,7 @@ def make_plot(xdata, ydata, metadata, ax, xlabel_set=None, ylabel_set=None, titl
         ax.legend([legend, "1 ps Running Average"])
     else:
         print(legend)
-        ax.legend([legend,])
+        ax.legend(legend,)
 
 
 #plot_xvg("potential.xvg",
@@ -127,18 +127,20 @@ def make_plot(xdata, ydata, metadata, ax, xlabel_set=None, ylabel_set=None, titl
 #    do_tot_avg=True,
 #    do_running_avg=True)
 #
-plot_xvg("density.xvg",
-    ylabel_set="Density (kg/m^3)",
-    title_set="Density, 1AKI, NPT Equilibrium",
-    do_tot_avg=True,
-    do_running_avg=True)
+#plot_xvg("density.xvg",
+#    ylabel_set="Density (kg/m^3)",
+#    title_set="Density, 1AKI, NPT Equilibrium",
+#    do_tot_avg=True,
+#    do_running_avg=True)
 #
 #plot_xvg("rmsd.xvg",
 #    fname2="rmsd_xtal.xvg",
 #    title_set="RMSD, 1AKI, Backbone",
-#    legend=["Equilibrated", "Crystal"])
+#    legend=["Equilibrated", "Crystal",])
 #
-#plot_xvg("gyrate.xvg",
-#         title_set="Radius of gyration, 1AKI, Unrestrained MD")
+plot_xvg("gyrate.xvg",
+         title_set="Radius of gyration, 1AKI, Unrestrained MD",
+         do_tot_avg=True,
+         do_running_avg=True)
 #
 plt.show()
